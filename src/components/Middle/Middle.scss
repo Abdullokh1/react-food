@@ -1,0 +1,123 @@
+.food-title{
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.food-date{
+  font-size: 16px;
+  line-height: 140%;
+  color: #e0e6e9;
+}
+.search-input{
+  width: 220px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background: #2D303E;
+  border: 1px solid #393c49;
+  padding: 14px 14px 14px 42px;
+  font-size: 14px;
+  line-height: 140%;
+  color: #abbbc2;
+}
+.search-input:focus{
+  outline: 0.5px solid #abbbc2;
+}
+::placeholder{
+  color: #abbbc2;
+}
+.bx-search{
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  left: 35px;
+  top: 2px;
+}
+
+.foot-intro{
+  width: 100%;
+}
+
+.middle-part{
+  padding: 24px 24px 0 24px;
+}
+
+.food-btn{
+  border: none;
+  background: #1f1d2b;
+  border: 1px solid #393C49;
+  border-radius: 8px;
+  width: 100px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  cursor: pointer;
+}
+.food-btn:hover{
+  background-color: #ea7c69;
+  transition: all 0.7s ease;
+}
+.food-down-img{
+  margin-right: 14px;
+  position: relative;
+  bottom: 1px;
+}
+.dishes-title{
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+.dishes-intro{
+  padding-bottom: 20px;
+}
+
+.food-items{
+  margin-bottom: 13px;
+}
+.food-items:not(:last-child){
+  margin-right: 32px;
+}
+.food-items:nth-child(4){
+  margin-right: 44px;
+}
+.food-links{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  padding: 0;
+  transition: all 0.3s ease;
+  padding: 5px;
+}
+.food-links::after{
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #EA7C69;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  transition: all 0.3s ease;
+
+}
+.food-links:hover{
+  color: #EA7C69;
+}
+.food-links:hover::after{
+  width: 60%;
+}
+
+.middle-part__list{
+  border-bottom: 1px solid rgba(204, 204, 204, 0.182);
+  margin-bottom: 25px;
+}

@@ -1,0 +1,22 @@
+body{
+  background-color: #252836;
+}
+ul{
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+
+
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ea7c6992;
+    border-radius: 10px;
+  }

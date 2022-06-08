@@ -1,0 +1,158 @@
+.right-part{
+  width: 450px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1d2b;
+}
+
+.order-number{
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.order-dine-in-btn{
+  border: none;
+  padding: 6px 20px;
+  background: transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ea7c69;
+  cursor: pointer;
+  border: 1px solid #393c49;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.order-dine-in-btn:hover{
+  background-color: #ea7c69;
+  color: #fff;
+}
+.order-lists{
+  margin-bottom: 24px;
+}
+
+.item-order{
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.orders-intro{
+  border-bottom: 1px solid rgba(204, 204, 204, 0.119);
+  padding: 0 30px;
+}
+
+.main-order-wrapper{
+  padding-top: 24px;
+  margin-bottom: 10px;
+}
+.order-img{
+  border-radius: 50%;
+}
+.order-sub-title{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.order-price{
+  font-weight: 500;
+  font-size: 12px;
+  color: #abbbc2;
+}
+.order-wrapper-inner{
+  margin-right: 61px;
+}
+.qty-item{
+  display: inline-block;
+  font-weight: 500;
+  color: #fff;
+  background: #2d303e;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  padding: 14px 19px;
+  padding: 14px 19px 12px 19px;
+  margin-right: 28px;
+}
+.order-main-price{
+  font-weight: 500;
+  color: #fff;
+  font-size: 15px;
+}
+.comment-input{
+  width: 297px;
+  height: 48px;
+  margin-right: 22px;
+  padding: 14px 88px 14px 14px;
+  background: #2d303e;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  font-size: 14px;
+  color:#e0e6e9;
+  border: none;
+}
+.comment-input:focus{
+  outline: 1px solid #393c49;
+}
+::placeholder{
+  color:#e0e6e9;
+}
+.delete-btn{
+  border: none;
+  background-color: transparent;
+  border: 1px solid #ff7ca3;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.delete-btn:hover{
+  background-color: #ea7c69;
+}
+.delete-btn:hover .bx-trash-alt{
+  color: #fff;
+}
+
+.bx-trash-alt{
+  font-size: 20px;
+  color: #ea7c69;
+}
+
+.order-li-item{
+  padding: 0 25px;
+}
+
+.order-list-main{
+  overflow-y: auto;
+  height: 380px;
+}
+
+.payment-btn{
+  border: none;
+  width: 400px;
+  height: 48px;
+  background: #ea7c69;
+  box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover{
+    background-color:  #1f1d2b;
+    border: 1.5px solid #ea7c69;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+}
+
+.offcanvas{
+  background-color: #1f1d2b;
+  width: 450px !important;
+}

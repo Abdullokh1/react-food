@@ -1,0 +1,45 @@
+.food-images{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.food-description {
+  overflow-y: auto;
+  height: 440px;
+  gap: 20px;
+  padding-top: 30px;
+}
+.food-prices{
+  width: 192px;
+  height: 226px;
+  background-color: #1f1d2b;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.food-content-wrapper{
+  padding: 114px 24px 24px 24px;
+}
+.type-of-food{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.price{
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.amount-of-food{
+  font-size: 14px;
+  line-height: 140%;
+  color: #abbbc2;
+}
+.food-prices{
+  margin-bottom: 58px;
+}
