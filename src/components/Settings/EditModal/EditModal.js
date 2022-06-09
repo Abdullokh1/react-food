@@ -41,7 +41,7 @@ function EditModal({edit,setEdit,setEditName,setEditPrice,setEditBowl}) {
             <div className='d-flex justify-content-center'>
               <div className='add-modal-btns'>
                 <button onClick={() => setEdit(!edit)} className='me-3'>Cancel</button>
-                <button>Save</button>
+                <button onClick={() => setEdit(!edit)}>Save</button>
               </div>
             </div>
 
