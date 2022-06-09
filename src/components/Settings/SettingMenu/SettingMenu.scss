@@ -1,0 +1,47 @@
+.setting-menu{
+  width: 22vw;
+  height: 85vh;
+  background: #1f1d2b;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.setting__item{
+  padding: 20px 30px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  h4{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+    color: #abbbc2;
+    font-weight: 500;
+  }
+
+  &:hover{
+    background: rgba(234, 124, 105, 0.26);
+  }
+  &:hover h4{
+    color: #EA7C69;
+  }
+  &:hover .setting__icon{
+    color: #EA7C69;
+  }
+  &:hover::after {
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: #EA7C69;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    border-radius: 30px;
+  }
+}
+
+.setting__icon{
+  color: #abbbc2;
+}

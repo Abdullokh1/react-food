@@ -1,15 +1,19 @@
-import Middle from "./components/Middle/Middle";
-import Navbar from "./components/Navbar/Navbar";
-import Right from "./components/Right/Right";
+// import Middle from "./components/Middle/Middle";
+// import Navbar from "./components/Navbar/Navbar";
+// import Right from "./components/Right/Right";
 import './App.css';
 import { useEffect, useState } from "react";
 import data from "./Data/Data";
+import { Route, Routes } from "react-router-dom";
+import Settings from "./components/Settings/Settings";
+import Home from "./components/Home/Home";
 
 
 function App() {
 
   let [food, setFood] = useState(data)
   let [empty, setEmtpy] = useState([])
+  let [dataInfo, setData] = useState(data)
 
   let [arr, setArr] = useState([])
 
@@ -17,7 +21,6 @@ function App() {
   const addFoodHandler = (item) =>{
     let tempTwo = empty.filter((el) => el.id === item.id);
     item.num = tempTwo.length + 1;
-    
     setEmtpy([...empty, item]);
   }
   
@@ -42,31 +45,27 @@ function App() {
   }; 
  
   return (
+   <>
+   
+   <Routes>
+     <Route path="/" element={<Home
+      addFoodHandler={addFoodHandler}
+      food={food}
+      empty={empty}
+      arr={arr}
+      changed={changed}
+      total={total}
+      deleteHandler={deleteHandler}
+      dataInfo={dataInfo}
+      setData={setData}
+     />}/>
+     <Route path="/Settings" element={<Settings
+      dataInfo={dataInfo}
+      setData={setData}
+     />}/>
+   </Routes>
+   </>
 
-    <div className="d-flex justify-content-between">
-      
-      <div>
-        <Navbar/>
-      </div>
- 
-      <div className="w-100">
-        <Middle
-        addFoodHandler={addFoodHandler}
-        />
-      </div>
- 
-      <div>
-        <Right
-        food={food}
-        empty={empty}
-        arr={arr}
-        changed={changed}
-        total={total}
-        deleteHandler={deleteHandler}
-        />
-      </div>
- 
-    </div>
   );
 }
 

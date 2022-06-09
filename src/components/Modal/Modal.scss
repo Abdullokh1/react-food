@@ -1,6 +1,11 @@
 .offcanvas{
-  padding: 64px 24px 0 24px;
+  padding: 24px 24px 0 24px;
   border-radius: 16px 16px 0px 16px;
+}
+.offcanvas-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .offcanvas-header {
   border-bottom: 1px solid rgba(204, 204, 204, 0.181);
@@ -8,4 +13,87 @@
 .payment-type{
   color: #ABBBC2;
   font-weight: 700;
+  font-size: 15px;
+}
+
+.payment-method-title{
+  font-size: 18px;
+}
+
+.payment-types{
+  width: 100px;
+  height: 70px;
+  border: 1px solid #393C49;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ABBBC2;
+  margin-right: 8px;
+}
+
+.payment-icon{
+  color: #ABBBC2;
+  font-size: 20px;
+}
+
+.payment-form{
+  input{
+    background-color: #2d303e;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    border: none;
+    height: 42px;
+    color: #fff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+
+
+    &:focus{
+      outline: none;
+    }
+    &::placeholder{
+      color: #e0e6e99d;
+    }
+  }
+
+  label{
+    font-size: 14px;
+  }
+}
+
+.payment-select{
+  background-color: transparent;
+  border: none;
+  height: 48px;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #393C49;
+
+  option{
+    background-color: #393C49;
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.payment-type-btn{
+  border: 1px solid #EA7C69;
+  height: 48px;
+  border-radius: 8px;
+  color: #EA7C69;
+  transition: all 0.4s ease;
+  margin-top: 25px;
+
+  &:hover{
+    background-color: #EA7C69 !important;
+    color: #fff;
+    box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+  }
 }

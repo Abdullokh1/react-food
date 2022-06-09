@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from '../Modal/Modal'
+import Modal from '../../Modal/Modal'
 import './Right.scss'
 
 function Right({changed, total, deleteHandler}) {
@@ -44,7 +44,7 @@ function Right({changed, total, deleteHandler}) {
                   </div>
                 </div>
                 <span className="qty-item">{item.num}</span>
-                <p className="order-main-price">${item.money}</p>
+                <p className="order-main-price">${(item.money * item.num).toFixed(2)}</p>
               </div>
               <div className="d-flex align-items-center justify-content-between comment-order-inner">
                 <input className="comment-input w-100" type="text" name="comment" placeholder="Please, just a little bit spicy only." />
