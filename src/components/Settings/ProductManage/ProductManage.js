@@ -11,6 +11,7 @@ function ProductManage({dataInfo,setData}) {
   let [type, setCategory] = useState(FilterBtn)
   let [modal, setModal] = useState(false)
   let [edit, setEdit] = useState(false)
+  let [saveEmpty, setSaveEmpty] = useState([])
 
   const filterItem = (type) =>{
     if(type === 'All'){
@@ -28,18 +29,43 @@ function ProductManage({dataInfo,setData}) {
 let [editName, setEditName] = useState('')
 let [editPrice, setEditPrice] = useState('')
 let [editBowl, setEditBowl] = useState('')
+let [edtifoodType, setFoodType] = useState('')
 
 
- const editHandler = (id) =>{
+
+ const editHandler = (item) =>{
    setEdit(!edit)
-   dataInfo.map(item =>{
-     if(item.id === id){
-       return item.title = editName
+   setSaveEmpty([item])
+
+  }
+  
+  const saveHandler = (item) =>{
+   setEdit(!edit)
+   dataInfo.map(el =>{
+     if(el.id === item.id){
+       return el.title = editName
      }
    })
-  
- }
 
+   dataInfo.map(el =>{
+    if(el.id === item.id){
+      return el.money = editPrice
+    }
+   })
+
+   dataInfo.map(el =>{
+    if(el.id === item.id){
+      return el.theRest = editBowl
+    }
+   })
+
+   dataInfo.map(el =>{
+    if(el.id === item.id){
+      return el.foodType = edtifoodType
+    }
+   })
+
+ }
 
 
 
@@ -82,7 +108,7 @@ let [editBowl, setEditBowl] = useState('')
                   <p className="price product__infos me-2 m-0">$ {item.money} </p>
                   <p className="amount-of-food product__infos m-0">{item.theRest} Bowls</p>
                 </div>
-                <div onClick={() => editHandler(item.id)} className='edit-part d-flex justify-content-center align-items-center'>
+                <div onClick={() => editHandler(item)} className='edit-part d-flex justify-content-center align-items-center'>
                   <i className='bx edit-text fs-5 me-2 bx-edit-alt'></i>
                   <p className='pt-3 edit-text'>Edit dish</p>
                 </div>
@@ -110,6 +136,8 @@ let [editBowl, setEditBowl] = useState('')
       setEditName={setEditName}
       setEditPrice={setEditPrice}
       setEditBowl={setEditBowl}
+      saveHandler={saveHandler}
+      saveEmpty={saveEmpty}
       />
        
     </div>

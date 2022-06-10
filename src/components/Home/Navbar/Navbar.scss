@@ -24,11 +24,13 @@
   border-radius: 12px 0 0px 12px;
   margin-bottom: 10px;
   position: relative;
-  left: 2px;
+  left: 15px;
+
+
 }
 .navbar__link{
   position: relative;
-  left: -2px;
+  left: -15px;
 }
 .active .navbar__item{
   background-color: #252836;
@@ -46,3 +48,8 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+
+

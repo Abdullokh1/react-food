@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './Modal.scss'
 
-function Modal({isOpened}) {
+function Modal() {
   return (
     <div className="offcanvas text-white offcanvas-end" tabIndex={-1} id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div className="offcanvas-header d-block">
         <h3 className='mb-2 fs-4'>Payment</h3>
         <p className='payment-type '>3 payment method available</p>
-        {/* <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" /> */}
       </div>
       <div className="offcanvas-body">
         <h4 className='mt-2 payment-method-title'>Payment Method</h4>

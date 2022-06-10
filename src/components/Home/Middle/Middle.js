@@ -7,7 +7,6 @@ function Middle({addFoodHandler,dataInfo,setData}) {
   let FilterBtn = ['All', ...new Set(data.map(item => item.foodType))]
   let [type, setCategory] = useState(FilterBtn)
 
-
    const filterItem = (type) =>{
     if(type === 'All'){
       setData(data)
@@ -29,7 +28,6 @@ function Middle({addFoodHandler,dataInfo,setData}) {
          }
        })}
       setData(arr)
-       
     }
 
   return (
@@ -43,7 +41,7 @@ function Middle({addFoodHandler,dataInfo,setData}) {
           </div>
           <div>
             <i className="bx bx-search" />
-            <input onChange={searchHandler} className="search-input" type="text" name="search" placeholder="Search for food, coffe, etc.." />
+            <input onChange={searchHandler} className="search-input" type="text" name="search" placeholder="Search for food, coffe, etc." />
           </div>
         </div>
 

@@ -95,7 +95,6 @@ const data = [
         money: 2.3,
         theRest: 15,
         foodType: "hot-dishes",
-
     },
     {
         id: 12,

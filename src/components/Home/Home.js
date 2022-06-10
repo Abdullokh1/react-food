@@ -26,6 +26,7 @@ function Home({
       addFoodHandler={addFoodHandler}
       dataInfo={dataInfo}
       setData={setData}
+      food={food}
       />
     </div>
 

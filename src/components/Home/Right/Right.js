@@ -43,8 +43,10 @@ function Right({changed, total, deleteHandler}) {
                     <p className="order-price">$ {item.money}</p>
                   </div>
                 </div>
-                <span className="qty-item">{item.num}</span>
-                <p className="order-main-price">${(item.money * item.num).toFixed(2)}</p>
+                <div className='d-flex'>
+                  <span className="qty-item">{item.num}</span>
+                  <p className="order-main-price">${(item.money * item.num).toFixed(2)}</p>
+                </div>
               </div>
               <div className="d-flex align-items-center justify-content-between comment-order-inner">
                 <input className="comment-input w-100" type="text" name="comment" placeholder="Please, just a little bit spicy only." />
