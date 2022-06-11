@@ -2,8 +2,16 @@ import React, { useState } from 'react'
 import data from '../../../Data/Data'
 import Foods from './Foods/Foods'
 import './Middle.scss'
+import '../../../i18n'
+import {useTranslation, initReactI18next} from "react-i18next";
 
 function Middle({addFoodHandler,dataInfo,setData}) {
+  const {t, i18n} = useTranslation();
+
+  let changeLanguage = (lang) =>{
+    i18n.changeLanguage(lang)
+  }
+
   let FilterBtn = ['All', ...new Set(data.map(item => item.foodType))]
   let [type, setCategory] = useState(FilterBtn)
 
@@ -59,6 +67,7 @@ function Middle({addFoodHandler,dataInfo,setData}) {
 
       <div className="d-flex align-items-center justify-content-between dishes-intro">
           <h3 className="dishes-title">Choose Dishes</h3>
+
           <button className="food-btn d-flex align-items-center">
             <i className='bx text-white fs-4 bx-chevron-down'></i>
             Dine In
