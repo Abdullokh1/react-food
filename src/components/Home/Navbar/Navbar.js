@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.scss";
-import logo from "../../../assets/Imgs/main-logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,7 +16,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <img className="mb-4" src={logo} alt="siteLogo" />
+        <img className="mb-4" src='https://imgur.com/zh0o071.png' alt="siteLogo" />
       </Link>
 
       <ul className="navbar__list">
